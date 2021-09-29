@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnvironmentToggle : MonoBehaviour
 {
-    //public Material earthSkybox, moonSkybox, marsSkybox;
+    public Material earthSkybox, moonSkybox, marsSkybox;
     public GameObject earthEnvironment, moonEnvironment, marsEnvironment;
     public GameObject[] spaceHelmets;
 
@@ -12,7 +12,7 @@ public class EnvironmentToggle : MonoBehaviour
     {
         Debug.Log("Showing Earth environment");
 
-        //RenderSettings.skybox = earthSkybox;
+        RenderSettings.skybox = earthSkybox;
 
         earthEnvironment.SetActive(true);
         moonEnvironment.SetActive(false);
@@ -29,7 +29,7 @@ public class EnvironmentToggle : MonoBehaviour
     {
         Debug.Log("Showing Moon environment");
        
-        //RenderSettings.skybox = moonSkybox;
+        RenderSettings.skybox = moonSkybox;
 
         moonEnvironment.SetActive(true);
         earthEnvironment.SetActive(false);
@@ -47,7 +47,7 @@ public class EnvironmentToggle : MonoBehaviour
     {
         Debug.Log("Showing Mars environment");
 
-        //RenderSettings.skybox = marsSkybox;
+        RenderSettings.skybox = marsSkybox;
 
         marsEnvironment.SetActive(true);
         moonEnvironment.SetActive(false);
